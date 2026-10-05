@@ -1,16 +1,27 @@
-# expense-tracker + installment 1, Author: Francis Kim G. Canoza, program for tracking expenses
+# expense-tracker + installment 2, Author: Francis Kim G. Canoza, program for tracking expenses
 
 print("========================================")
 print("\t   EXPENSE TRACKER")
 print("  Are you ready to track your expenses?")
 print("========================================")
-
-print("\nWelcome to your own Expense Tracker!\n")
 print("Main Menu")
 print("[1] Add Expense\t\t(coming soon)")
 print("[2] View all expenses\t(coming soon)")
 print("[3] Show total spent\t(coming soon)")
 print("[4] Exit program\t(coming soon)")
+name = input("\nWhat's your name? ")
+print(f"Welcome, {name}! Let's log two expenses.")
+item1 = input("First expense? ")
+amount1 = float(input("Amount? "))
+item2 = input("Second expense? ")
+amount2 = float(input("Amount? "))
+print(f"\n----------------------------------------") 
+print("Summary")
+print(f"  -{item1}:\t\t${amount1:.2f}")
+print(f"  -{item2}:\t\t${amount2:.2f}")
+total = amount1 + amount2
+print(f"Total spent:\t\t${total:.2f}")
+average = total / 2
+print(f"Average spent:\t\t${average:.2f}")
 print("----------------------------------------") 
-print("Made by Francis Kim G. Canoza | Installment 1")
-print("========================================")
+print("Made by Francis Kim G. Canoza | Installment 2")
